@@ -1,1 +1,148 @@
+/* Orion Social Media Studio - Dark Theme */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  color: #e0e6f0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.orion-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.orion-panel {
+  background: rgba(26, 31, 58, 0.8);
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 20px 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.orion-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.orion-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d9ff 0%, #7b68ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+
+.orion-header p {
+  font-size: 18px;
+  color: #a0aec0;
+  font-weight: 300;
+}
+
+.orion-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border: 3px solid #00d9ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 217, 255, 0.1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.typewriter {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e0e6f0;
+  padding: 20px;
+  background: rgba(10, 14, 39, 0.6);
+  border-radius: 12px;
+  border-left: 4px solid #00d9ff;
+  margin-bottom: 24px;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: #00d9ff;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.step-chip {
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid rgba(0, 217, 255, 0.3);
+  background: rgba(26, 31, 58, 0.8);
+  color: #a0aec0;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.step-chip.active {
+  background: linear-gradient(135deg, #00d9ff 0%, #7b68ee 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.4);
+}
+
+.step-chip.completed {
+  background: rgba(0, 217, 255, 0.2);
+  border-color: #00d9ff;
+  color: #00d9ff;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e6f0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input,
+.form-textarea,
+.form-select
