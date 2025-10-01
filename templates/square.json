@@ -1,1 +1,86 @@
-
+{
+  "timeline": {
+    "soundtrack": {
+      "src": "{{audioUrl}}",
+      "effect": "fadeInFadeOut"
+    },
+    "background": "{{paletteColor}}",
+    "tracks": [
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "image",
+              "src": "{{logoUrl}}"
+            },
+            "start": 0,
+            "length": 5,
+            "fit": "contain",
+            "scale": 0.3,
+            "position": "top",
+            "offset": {
+              "y": 0.15
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "html",
+              "html": "<div style='width: 800px; height: 800px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px;'><h1 style='font-family: Arial, sans-serif; font-size: 72px; font-weight: bold; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); margin: 0; line-height: 1.2;'>{{headline}}</h1></div>",
+              "css": "body { margin: 0; }",
+              "width": 1080,
+              "height": 1080
+            },
+            "start": 0,
+            "length": 5,
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "html",
+              "html": "<div style='width: 800px; padding: 40px; text-align: center;'><p style='font-family: Arial, sans-serif; font-size: 32px; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); margin: 0;'>{{caption}}</p></div>",
+              "css": "body { margin: 0; }",
+              "width": 1080,
+              "height": 200
+            },
+            "start": 0,
+            "length": 5,
+            "position": "bottom",
+            "offset": {
+              "y": -0.15
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "output": {
+    "format": "mp4",
+    "resolution": "sd",
+    "aspectRatio": "1:1",
+    "size": {
+      "width": 1080,
+      "height": 1080
+    },
+    "fps": 30,
+    "quality": "high"
+  }
+}
