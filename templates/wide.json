@@ -1,1 +1,87 @@
-
+{
+  "timeline": {
+    "soundtrack": {
+      "src": "{{audioUrl}}",
+      "effect": "fadeInFadeOut"
+    },
+    "background": "{{paletteColor}}",
+    "tracks": [
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "image",
+              "src": "{{logoUrl}}"
+            },
+            "start": 0,
+            "length": 7,
+            "fit": "contain",
+            "scale": 0.2,
+            "position": "topLeft",
+            "offset": {
+              "x": 0.05,
+              "y": 0.05
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "html",
+              "html": "<div style='width: 1600px; height: 900px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 100px;'><h1 style='font-family: Arial, sans-serif; font-size: 110px; font-weight: bold; color: white; text-shadow: 3px 3px 12px rgba(0,0,0,0.4); margin: 0; line-height: 1.2;'>{{headline}}</h1></div>",
+              "css": "body { margin: 0; }",
+              "width": 1920,
+              "height": 1080
+            },
+            "start": 0,
+            "length": 7,
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "html",
+              "html": "<div style='width: 1400px; padding: 50px; text-align: center; background: rgba(0,0,0,0.35); border-radius: 20px;'><p style='font-family: Arial, sans-serif; font-size: 48px; color: white; margin: 0;'>{{caption}}</p></div>",
+              "css": "body { margin: 0; }",
+              "width": 1920,
+              "height": 250
+            },
+            "start": 1,
+            "length": 6,
+            "position": "bottom",
+            "offset": {
+              "y": -0.12
+            },
+            "transition": {
+              "in": "slideUp",
+              "out": "fade"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "output": {
+    "format": "mp4",
+    "resolution": "1080",
+    "aspectRatio": "16:9",
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fps": 30,
+    "quality": "high"
+  }
+}
